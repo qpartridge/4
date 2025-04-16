@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    
+        <title>Document</title>
+        
+
+        <link rel="stylesheet" type="text/css" href="css/scratch.css">
+</head>
+<h1>The Bee Gees</h1>
+
+<body>
+    <p>
+        Listen to their Greatest Hits!
+    </p>
+    <p> </p>
+    <a href="webapp.html">Flappy Bird</a>
+
+    <img src="assets/img/beegees.jpg" width="500">
+
+    
+       
+    <iframe width="560" height="315"
+    src="https://www.youtube.com/watch?v=TgkhEc-69rc"
+    title="Bee Gees " frameborder="0"
+   
+    allowfullscreen>
+  </iframe>
+
+   <br>
+   <br>
+
+  <div class="tableauPlaceholder" id="tableauViz" style="width: 100%; height: 800px;"></div>
+
+  <!-- Load Tableau JS API -->
+  <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+  <!-- Initialize Viz -->
+  <script>
+    const containerDiv = document.getElementById("tableauViz");
+    const url = "https://public.tableau.com/views/Superstore_16505418673600/Dashboard1";
+
+    const options = {
+      hideTabs: true,
+      hideToolbar: false,
+      width: "200",
+      height: "500px"
+      
+
+    };
+
+    new tableau.Viz(containerDiv, url, options);
+  </script>
+
+  <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+
+
+  
+  <a href="index.html">Home Page</a>
+
+</body>
+</html>
